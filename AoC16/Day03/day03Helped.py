@@ -1,14 +1,14 @@
 import re
 
 
-text = './triangles.txt'
+text = "triangles.txt"
 
 text = open(text)
 
 
 def is_triangle(sides):
     x, y, z = sorted(sides)
-    return z < (x + y)
+    return z < x + y
 
 
 def parse_ints(text):

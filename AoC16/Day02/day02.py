@@ -3,7 +3,7 @@
 # 2018-02-17
 
 
-def checkOver(a, b):
+def check_over(a, b):
 
     """This function will check whether the x and y values have gone past the
     limit of the keypad.
@@ -14,12 +14,12 @@ def checkOver(a, b):
     b = y
 
     if (a > 3) or (b > 3):
-        if (a > 3):
+        if a > 3:
             a = 3
         else:
             b = 3
     elif (a < 1) or (b < 1):
-        if (a < 1):
+        if a < 1:
             a = 1
         else:
             b = 1
@@ -63,7 +63,7 @@ directions = [list1, list2, list3, list4, list5]
 nums = []
 
 
-def codeLoop():
+def code_loop():
 
     """ This is the main block of code that will loop over the directions
         and check them for the numbers of the keypad.
@@ -72,8 +72,8 @@ def codeLoop():
     global y
     num = 0
 
-    for list in directions:
-        for move in list:
+    for lists in directions:
+        for move in lists:
 
             if move == 'U':
                 y += 1
@@ -84,7 +84,7 @@ def codeLoop():
             elif move == 'R':
                 x += 1
 
-            checkOver(x, y)
+            check_over(x, y)
 
         if x == 1 and y == 3:
             num = 1
@@ -114,4 +114,4 @@ def codeLoop():
 # call to above function, codeLoop()
 x = 2
 y = 2
-codeLoop()
+code_loop()

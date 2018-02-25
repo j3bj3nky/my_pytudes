@@ -3,7 +3,7 @@
 # 2018-02-17
 
 
-def countTris():
+def count_tris():
 
     """This function will simply count the amount of possible triangles from
        a file.all
@@ -11,9 +11,9 @@ def countTris():
 
     possible = 0
     impossible = 0
-    triFile = './triangles.txt'
+    trifile = './triangles.txt'
 
-    with open(triFile) as tf:
+    with open(trifile) as tf:
         sides = tf.readlines()
     sides = [x.strip() for x in sides]
 
@@ -39,4 +39,4 @@ def countTris():
     print(impossible)
 
 
-countTris()
+count_tris()
