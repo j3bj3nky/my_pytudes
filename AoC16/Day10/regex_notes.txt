@@ -1,0 +1,7 @@
+Just some notes to think out regex for this problem.
+---------------------
+
+First part:
+    value (#) goes to bot (#)
+
+    
